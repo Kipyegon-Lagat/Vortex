@@ -7,9 +7,8 @@ import { Card } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Checkbox } from "@/components/ui/checkbox"
-import Image from "next/image"
 import { Alert, AlertDescription } from "@/components/ui/alert"
-import { ExclamationTriangleIcon } from "@radix-ui/react-icons"
+import { AlertTriangle, User } from "lucide-react"
 
 export default function LoginPage() {
   const [username, setUsername] = useState("")
@@ -38,7 +37,7 @@ export default function LoginPage() {
     <div className="min-h-screen flex flex-col items-center justify-center bg-[#F5F7FF]">
       <div className="text-center mb-6">
         <div className="flex items-center justify-center gap-2 text-xl font-semibold text-[#101010]">
-          <Image src="/meal-logo.svg" width={24} height={24} alt="MEAL Logo" />
+          <User className="w-6 h-6" />
           Vortex
         </div>
       </div>
@@ -51,7 +50,7 @@ export default function LoginPage() {
 
         {error && (
           <Alert variant="destructive" className="mb-4">
-            <ExclamationTriangleIcon className="h-4 w-4" />
+            <AlertTriangle className="h-4 w-4" />
             <AlertDescription>{error}</AlertDescription>
           </Alert>
         )}
