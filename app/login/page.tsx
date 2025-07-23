@@ -45,7 +45,7 @@ export default function LoginPage() {
       <Card className="w-[400px] p-6 bg-white shadow-sm rounded-lg">
         <div className="text-center mb-6">
           <h1 className="text-xl font-semibold">Account Login</h1>
-          <p className="text-sm text-gray-500 mt-1">Enter your credentials</p>
+          <p className="text-sm text-gray-500 mt-1">Enter logins</p>
         </div>
 
         {error && (
