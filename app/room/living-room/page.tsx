@@ -24,7 +24,7 @@ export default function LivingRoomPage() {
         <div className="flex justify-between items-center mb-4">
           <h2 className="font-medium">Temperature</h2>
           <Button variant="ghost" size="sm" className="text-muted-foreground">
-            Auto Mode
+            Auto
           </Button>
         </div>
 
