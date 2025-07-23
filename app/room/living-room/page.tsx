@@ -30,7 +30,7 @@ export default function LivingRoomPage() {
 
         <div className="relative w-48 h-48 mx-auto mb-6">
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-4xl font-medium">{temperature}°C</div>
+            <div className="text-4xl font-medium">{temperature} °C</div>
           </div>
           <svg className="w-full h-full -rotate-90">
             <circle cx="96" cy="96" r="88" fill="none" stroke="currentColor" strokeWidth="2" className="text-muted" />
